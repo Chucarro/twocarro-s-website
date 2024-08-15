@@ -50,15 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (headerElements.mobileFlags) headerElements.mobileFlags.style.width = "75px";
             }
         } else {
-            // Reset styles if the screen width is less than 992px
-            headerElements.container.style.fontSize = "1rem";
-            headerElements.container.style.backgroundColor = "transparent";
-            headerElements.container.style.paddingBottom = "1.8rem";
-            headerElements.container.style.paddingTop = "1.5rem";
-            headerElements.list.style.marginRight = "6rem";
-            headerElements.logo.style.marginLeft = "1.8rem";
-            if (headerElements.flags) headerElements.flags.style.width = "75px";
-            if (headerElements.mobileFlags) headerElements.mobileFlags.style.width = "75px";
+            null; // No changes for mobile
         }
     };
 
@@ -145,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (mobileMenu) {
             const isActive = mobileMenu.classList.toggle('show');
             mobileMenuButton.classList.toggle('is-active', isActive);
-            body.classList.toggle('no-scroll', isActive);
         }
     };
 
@@ -158,24 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (mobileMenu) {
                     mobileMenu.classList.remove('show');
                     mobileMenuButton.classList.remove('is-active');
-                    body.classList.remove('no-scroll');
                 }
             });
         });
     }
 
-    // Close Mobile Menu on Larger Screens
-    const mediaQuery = window.matchMedia("(min-width: 992px)");
-
-    const handleResize = () => {
-        if (mobileMenu && mediaQuery.matches) {
-            mobileMenu.classList.remove('show');
-            mobileMenuButton.classList.remove('is-active');
-            body.classList.remove('no-scroll');
-        }
-        updateHeaderStyles(); // Ensure header styles are updated on resize
-    };
-
-    mediaQuery.addEventListener('change', handleResize);
-    handleResize(); // Initial check
 });
