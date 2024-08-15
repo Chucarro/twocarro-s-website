@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "first-item-title": "Inicio",
+        "second-item-title":"Servicios",
+        "third-item-title":"Nosotros",
+        "last-item-title":"Contacto"
+    },
+
+    "hero": {
+        "title": "El cuidado que tu auto necesita",
+        "subtitle": "Estética Automotriz, Lavado y Cuidado de tu auto.",
+        "button": "Agendarse"
+    },
+
+    "service-section": {
+        "title": "Nuestros Servicios",
+
+        "first-card-title":"Lavados",
+        "first-card-content":"Ofrecemos un lavado completo para tu auto que incluye limpieza exterior e interior, eliminando suciedad y manchas para dejar tu vehículo reluciente y fresco.",
+
+        "second-card-title":"Encerados",
+        "second-card-content":"Nuestro servicio de encerado protege y realza la pintura de tu auto, aplicando una cera de alta calidad que proporciona un acabado brillante y duradero, además de proteger contra los elementos.",
+
+        "third-card-title":"Pulidos",
+        "third-card-content":"Pulimos tu auto para eliminar rayaduras menores y devolverle un brillo intenso, utilizando productos de alta calidad que protegen y mantienen el acabado por más tiempo.",
+
+        "fourth-card-title":"Lavado de Chasis",
+        "fourth-card-content":"Ofrecemos limpieza de chasis para tu auto, eliminando suciedad, barro y residuos acumulados, y protegiendo las partes inferiores para mejorar el rendimiento y prolongar la vida útil del vehículo.",
+
+        "last-card-title":"Limpieza de Faroles",
+        "last-card-content":"Nuestro servicio de restauración de faroles mejora la claridad y el brillo de tus luces, eliminando opacidad y rayaduras para una visibilidad óptima y un aspecto renovado.",
+
+        "card-button": "Conoce Más...",
+
+        "marquee-title": "Trabajando con las mejores marcas"
+        
+    },
+
+    "about-section": {
+        "title":"Por que Elegirnos?",
+        "first-content":"Elegirnos significa optar por calidad y atención al detalle. Nos destacamos por utilizar productos de primera línea y técnicas avanzadas en cada servicio, asegurando resultados excepcionales y duraderos. Nuestro equipo está comprometido con la satisfacción del cliente y con ofrecer una experiencia profesional y personalizada. Confía en nosotros para mantener tu vehículo en óptimas condiciones y lucir siempre como nuevo.",
+
+        "second-title":"Sobre Nosotros",
+        "last-content":"Twocarro's es una empresa de estética automotriz ubicada en Rivera, Uruguay, fundada y dirigida por Martín Chucarro. Desde sus inicios, Twocarro's se ha distinguido por ofrecer un servicio de limpieza y embellecimiento vehicular de alta calidad, impulsado por la profunda pasión  por los autos y su estética.",
+
+        "cta-title":"Conoce Nuestro Trabajo"
+        
+    },
+
+    "contact-section": {
+        "title":"Conctactanos",
+        "button":"Llámanos",
+        "content-title":"Tambien  contamos con",
+        "content-subtitle":"Puedes seguirnos en nuestras redes y mandarnos mensajes con cualquier consulta."
+    },
+
+    "footer-section": {
+        "first-item-title": "Inicio",
+        "second-item-title":"Servicios",
+        "third-item-title":"Nosotros",
+        "last-item-title":"Contacto"
+    }
+}

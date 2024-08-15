@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "first-item-title": "Início",
+        "second-item-title": "Serviços",
+        "third-item-title": "Sobre Nós",
+        "last-item-title": "Contato"
+    },
+
+    "hero": {
+        "title": "O cuidado que seu carro precisa",
+        "subtitle": "Estética Automotiva, Lavagem e Cuidados com seu carro.",
+        "button": "Agendar"
+    },
+
+    "service-section": {
+        "title": "Nossos Serviços",
+
+        "first-card-title": "Lavagens",
+        "first-card-content": "Oferecemos uma lavagem completa para seu carro que inclui limpeza exterior e interior, removendo sujeira e manchas para deixar seu veículo brilhante e fresco.",
+
+        "second-card-title": "Cera",
+        "second-card-content": "Nosso serviço de aplicação de cera protege e valoriza a pintura do seu carro, aplicando uma cera de alta qualidade que proporciona um acabamento brilhante e duradouro, além de proteger contra os elementos.",
+
+        "third-card-title": "Polimento",
+        "third-card-content": "Polimos seu carro para remover arranhões menores e devolver um brilho intenso, utilizando produtos de alta qualidade que protegem e mantêm o acabamento por mais tempo.",
+
+        "fourth-card-title": "Lavagem de Chassis",
+        "fourth-card-content": "Oferecemos limpeza de chassis para seu carro, removendo sujeira, barro e resíduos acumulados, e protegendo as partes inferiores para melhorar o desempenho e prolongar a vida útil do veículo.",
+
+        "last-card-title": "Limpeza de Faróis",
+        "last-card-content": "Nosso serviço de restauração de faróis melhora a clareza e o brilho das suas luzes, removendo opacidade e arranhões para uma visibilidade ideal e uma aparência renovada.",
+
+        "card-button": "Saiba Mais...",
+
+        "marquee-title": "Trabalhando com as melhores marcas"
+
+    },
+
+    "about-section": {
+        "title": "Por que Nos Escolher?",
+        "first-content": "Escolher-nos significa optar por qualidade e atenção aos detalhes. Destacamo-nos por utilizar produtos de primeira linha e técnicas avançadas em cada serviço, garantindo resultados excepcionais e duradouros. Nossa equipe está comprometida com a satisfação do cliente e com oferecer uma experiência profissional e personalizada. Confie em nós para manter seu veículo em ótimas condições e com aparência sempre de novo.",
+
+        "second-title": "Sobre Nós",
+        "last-content": "A Twocarro's é uma empresa de estética automotiva localizada em Rivera, Uruguai, fundada e dirigida por Martín Chucarro. Desde o início, a Twocarro's se destacou por oferecer um serviço de limpeza e embelezamento veicular de alta qualidade, impulsionado pela profunda paixão por carros e sua estética.",
+
+        "cta-title":"Conheça Nosso Trabalho"
+
+    },
+
+    "contact-section": {
+        "title": "Contate-Nos",
+        "button": "Ligue Para Nós",
+        "content-title": "Também contamos com",
+        "content-subtitle": "Você pode nos seguir nas nossas redes e enviar mensagens com qualquer dúvida."
+    },
+
+    "footer-section": {
+        "first-item-title": "Início",
+        "second-item-title": "Serviços",
+        "third-item-title": "Sobre Nós",
+        "last-item-title": "Contato"
+    }
+}
