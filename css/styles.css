@@ -345,6 +345,7 @@ body {
 
 
 .icon-button {
+    display: none;
     position: absolute;
     border: none;
     background: none;
@@ -1255,11 +1256,23 @@ hr {
     }
     /* Service section */
     /* hide carousel and show mobile one*/
-    .carousel {
-        display: none;
+    .carousel-item:hover ~ .carousel-item {
+        -webkit-transform: translate3d(40px, 0, 0);
+        transform: translate3d(40px, 0, 0);
     }
-    .mobile-carousel {
-        display: block; /* Show only on mobile devices */
+    .carousel-item {
+        width: 15%;
+    }
+    .carousel-item:hover {
+        width: 50%;
+    }
+    .carousel-item-details {
+        opacity: 0;
+        transition: opacity .6s ease;
+    }
+    .carousel-item:hover 
+    .carousel-item-details {
+        opacity: 1;
     }
     .about-content  {
         justify-content: center;
