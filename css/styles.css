@@ -30,12 +30,10 @@
 
 
 html {
-    scroll-snap-type: y mandatory;
     scrollbar-color: #fff #000;
     scroll-behavior: smooth;
     overflow-x: hidden;
     scrollbar-width: none;
-    scroll-snap-stop: always;
     scroll-padding-top: 1.6rem;
 }
 
@@ -55,7 +53,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-snap-align: start;
     user-select:none;
 }
 
@@ -361,7 +358,7 @@ body {
 }
 
 .icon-button.is-active {
-    transform: rotate(-120deg);
+    transform: rotate(-300deg);
 }
 
 .icon-button img {
@@ -831,7 +828,6 @@ hr {
     align-items: center;
     gap: 10rem;
     padding: 2rem;
-    height: 80dvh;
 }
 
 .contact-info-container {
@@ -1193,18 +1189,22 @@ hr {
 @media (width <= 768px) {
     :root {
         /* marquee config Javascript*/
-        --marquee-elements-displayed: 1.2;
+        --marquee-elements-displayed: 2.6;
+        --marquee-width: 80dvw;
     }
-    
     .heading-01 {
         font-size: 2.2rem;
     }
     .container {
-        min-height: 100%;
-        scroll-snap-align:unset;
+        .container {
+            height: 100%;
+        }
     }
 
     /* mobile menu*/
+    .icon-button {
+        width: 40px;
+    }
     .link-button {
         font-size: 1.3rem;
     }
@@ -1215,6 +1215,7 @@ hr {
 
     .carousel {
         padding-bottom: 1rem;
+        margin: 0 2rem;
     }
     .carousel-item:hover ~ .carousel-item {
         -webkit-transform: translate3d(40px, 0, 0);
@@ -1234,11 +1235,12 @@ hr {
     .carousel-item-details {
         opacity: 1;
     }
+    /* About section*/
     .about-content  {
         justify-content: center;
         align-items: center;
+        position: static;
     }
-    /* About section*/
     .about-content-container {
         flex-direction: column;
         gap: 0;
@@ -1265,6 +1267,11 @@ hr {
     .content-container {
         flex-direction: column;
         margin-top: 2rem;
+        gap: 1rem;
+        padding: 3rem;
+    }
+    .map-title {
+        transform: translateY(30px);
     }
     .map-container {
         width: 150px;
@@ -1278,9 +1285,25 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1.2rem;
+    }
+    .cta-social-container {
         gap: 2rem;
     }
+    .cta-social-link {
+        position: relative;
+    }
+    .cta-social-title {
+        position: absolute;
+        bottom: 0;
+    }
+    .contact-link {
+        padding: .5rem;
+    }
     /* Footer */
+    .footer {
+        padding-top: .2rem;
+    }
     .footer-map-container {
         flex-direction: column;
         gap: 0;
@@ -1294,14 +1317,3 @@ hr {
     }
 }
 
-@media  (wdith <= 768px) and (orientation : landscape) {
-    body {
-        transform: rotate(90deg);
-        transform-origin: left top;
-        width: 100vh;
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-}

@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (headerElements.mobileFlags) headerElements.mobileFlags.style.width = "75px";
             }
         } else {
+            headerElements.logo.style.marginLeft = ".2rem";
             null; // No changes for mobile
         }
     };
