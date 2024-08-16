@@ -1195,10 +1195,7 @@ hr {
         /* marquee config Javascript*/
         --marquee-elements-displayed: 1.2;
     }
-    html {
-        scroll-snap-type: none;
-        scroll-snap-stop:normal;
-    }
+    
     .heading-01 {
         font-size: 2.2rem;
     }
