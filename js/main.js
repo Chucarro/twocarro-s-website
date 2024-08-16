@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateHeaderStyles = () => {
-        const mediaQuery = window.matchMedia("(min-width: 992px)").matches;
+        const mediaQuery = window.matchMedia("(width >= 992px)").matches;
         const isScrolled = window.scrollY > 100;
 
         if (mediaQuery) {
