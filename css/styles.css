@@ -1195,12 +1195,17 @@ hr {
         /* marquee config Javascript*/
         --marquee-elements-displayed: 1.2;
     }
+    html {
+            scroll-snap-stop: normal;
+            scroll-snap-type: none;
+    }
     
     .heading-01 {
         font-size: 2.2rem;
     }
     .container {
         min-height: 100%;
+        scroll
         scroll-snap-align:unset;
     }
 
