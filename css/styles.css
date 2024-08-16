@@ -40,6 +40,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background-color: #111111;
     font-family: var(--primary-font-family) , var(--secondary-font-family) , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -319,6 +320,7 @@ body {
     z-index: 3;
     transition: right .3s ease; 
     display: none;
+    overflow: hidden;
 }
 
 .navigation-panels {
@@ -350,6 +352,7 @@ body {
     border: none;
     background: none;
     width: 50px;
+    height: 50px;
     right: 0;
     top: 0;
     margin: .8rem;
@@ -629,65 +632,6 @@ hr {
 .carousel-item-details:hover {
     opacity: 1;
 }
-
-
-/* Mobile carousel styles */
-.mobile-carousel {
-    display: none; /* Hide by default */
-}
-.mobile-carousel-container {
-    display: flex;
-    scroll-behavior: smooth;
-    position: relative;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    padding: 0 2rem;
-
-}
-.mobile-carousel-item {
-    flex: 0 0 auto;
-    width: 30%;
-    height: 250px;
-    border-radius: .5rem;
-    background-color: #95bcd6;
-    overflow: hidden;
-    margin-top: 2rem;
-    position: relative;
-}
-.mobile-carousel-item img {
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
-        display: block;
-}
-
-.mobile-carousel-item-details {
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 100%);
-    font-size: 1rem;
-    opacity: 1;
-    padding: 10px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.mobile-carousel-item-details h3,
-.mobile-carousel-item-details p {
-    margin: 0;
-    color: #fff;
-    font-family: var(--secondary-font-family);
-    max-width: 400px;
-}
-
-
 
 /* Marquee */
 
@@ -969,6 +913,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .contact-socials svg {
@@ -1016,6 +961,14 @@ hr {
     opacity: 0;
     transform: translateY(150px);
     transition: opacity 1s;
+}
+
+.mobile-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -1242,7 +1195,6 @@ hr {
         /* marquee config Javascript*/
         --marquee-elements-displayed: 1.2;
     }
-    
     .heading-01 {
         font-size: 2.2rem;
     }
@@ -1255,7 +1207,10 @@ hr {
         width: 50px;
     }
     /* Service section */
-    /* hide carousel and show mobile one*/
+
+    .carousel {
+        padding-bottom: 1rem;
+    }
     .carousel-item:hover ~ .carousel-item {
         -webkit-transform: translate3d(40px, 0, 0);
         transform: translate3d(40px, 0, 0);
@@ -1283,12 +1238,22 @@ hr {
         flex-direction: column;
         gap: 0;
         height: 100%;
+        align-items: center;
+        
         text-align: center;
         margin: 0;
     }
-    .copy-02 {
-        max-width: none;
+    .blob {
+        width: 200px;
     }
+    .heading-02 {
+        font-size: 1rem;
+    }
+    .copy-02 {
+        max-width: 300px;
+        font-size: 1rem;
+    }
+    
     .cta-company-content {
         display: none;
     }
