@@ -30,12 +30,10 @@
 
 
 html {
-    scroll-snap-type: y mandatory;
     scrollbar-color: #fff #000;
     scroll-behavior: smooth;
     overflow-x: hidden;
     scrollbar-width: none;
-    scroll-snap-stop: always;
     scroll-padding-top: 1.6rem;
 }
 
@@ -55,7 +53,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-snap-align: start;
     user-select:none;
 }
 
@@ -1195,18 +1192,11 @@ hr {
         /* marquee config Javascript*/
         --marquee-elements-displayed: 1.2;
     }
-    html {
-            scroll-snap-stop: normal;
-            scroll-snap-type: none;
-    }
-    
     .heading-01 {
         font-size: 2.2rem;
     }
     .container {
         min-height: 100%;
-        scroll
-        scroll-snap-align:unset;
     }
 
     /* mobile menu*/
